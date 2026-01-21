@@ -1,0 +1,258 @@
+.profile-page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.profile-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.profile-header h1 {
+  color: #8B4513;
+  margin: 1rem 0 0.5rem 0;
+  font-size: 2.5em;
+}
+
+.profile-header p {
+  color: #666;
+  font-size: 1.1em;
+}
+
+.profile-sections {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.profile-section {
+  background: white;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(139, 69, 19, 0.1);
+  border: 1px solid #e0d6cc;
+}
+
+.profile-section h2 {
+  color: #8B4513;
+  margin-bottom: 1.5rem;
+  font-size: 1.5em;
+  border-bottom: 2px solid #f0e6dc;
+  padding-bottom: 0.5rem;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  color: #5d4037;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 2px solid #d7ccc8;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: #8B4513;
+}
+
+.phone-input {
+  display: flex;
+  gap: 10px;
+}
+
+.country-code {
+  flex: 0 0 120px;
+  background: #f5f0eb;
+  border-color: #d7ccc8;
+}
+
+.hint {
+  color: #8d6e63;
+  font-size: 0.9em;
+  margin-top: 0.25rem;
+  display: block;
+}
+
+.verification-badge {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 4px;
+  font-size: 0.85em;
+  margin-left: 10px;
+  font-weight: 500;
+}
+
+.verification-badge.not-verified {
+  background: #ffecb3;
+  color: #f57c00;
+}
+
+.user-type-toggle {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.type-btn {
+  flex: 1;
+  padding: 1rem;
+  border: 2px solid #d7ccc8;
+  background: white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.3s;
+  color: #5d4037;
+}
+
+.type-btn:hover {
+  border-color: #8B4513;
+  transform: translateY(-2px);
+}
+
+.type-btn.active {
+  background: #8B4513;
+  color: white;
+  border-color: #8B4513;
+}
+
+.save-btn {
+  background: #8B4513;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-weight: 500;
+}
+
+.save-btn:hover:not(:disabled) {
+  background: #6b3410;
+  transform: translateY(-2px);
+}
+
+.save-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.account-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.info-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #f0e6dc;
+}
+
+.info-row:last-child {
+  border-bottom: none;
+}
+
+.label {
+  color: #5d4037;
+  font-weight: 500;
+}
+
+.value {
+  color: #333;
+  font-family: monospace;
+}
+
+.status {
+  padding: 0.25rem 0.75rem;
+  border-radius: 4px;
+  font-size: 0.9em;
+  font-weight: 500;
+}
+
+.status.active {
+  background: #c8e6c9;
+  color: #2e7d32;
+}
+
+.status.admin {
+  background: #bbdefb;
+  color: #1565c0;
+}
+
+.message {
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-weight: 500;
+}
+
+.message.success {
+  background: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+.message.error {
+  background: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+
+.message.info {
+  background: #d1ecf1;
+  color: #0c5460;
+  border: 1px solid #bee5eb;
+}
+
+.provider-note {
+  background: #e8f5e9;
+  border: 1px solid #c8e6c9;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+.provider-note p {
+  color: #2e7d32;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.provider-note ul {
+  margin: 0.5rem 0 0 1.5rem;
+  color: #424242;
+}
+
+.provider-note li {
+  margin: 0.25rem 0;
+  font-size: 0.9rem;
+}
+
+.type-btn small {
+  display: block;
+  font-size: 0.8rem;
+  color: #8d6e63;
+  margin-top: 0.25rem;
+}
+
+.type-btn.active small {
+  color: rgba(255, 255, 255, 0.9);
+}
